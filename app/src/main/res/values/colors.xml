@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pup">#D1C6F3</color>
+    <color name="dpup">#241551</color>
+    <color name="bpink">#E9BCAC</color>
+    <color name="meg">#A5678E</color>
+    <color name="pink">#E8B7D4</color>
+    <color name="blue">#A483FD</color>
+    <color name="txtblue">#1E1553</color>
+    <color name="dpink">#F38D68</color>
+    <color name="violet">#945F95</color>
+    <color name="lblue">#6CB9FF</color>
+
+</resources>

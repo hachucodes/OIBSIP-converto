@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".move4"
+    android:background="@drawable/gradient1">
+
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/startimg4"
+        android:layout_width="115dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="5dp"
+        android:src="@drawable/time"
+        app:shapeAppearanceOverlay="@style/circle">
+
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time converto"
+        android:layout_below="@+id/startimg4"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_marginStart="100dp"/>
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:layout_below="@+id/text4"
+        android:inputType="number"
+        android:text="0000"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:background="@drawable/border"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="right"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/input1"
+        android:text="0000"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:background="@drawable/border"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/result1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:backgroundTint="@color/lblue"
+        />
+
+    <LinearLayout
+        android:id="@+id/tioptions1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/clear">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sec -> min"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min -> sec"
+            android:textSize="25dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tioptions2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tioptions1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hrs -> sec"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sec -> hrs"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tioptions3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tioptions2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min -> hrs"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/htm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hrs -> min"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tioptions4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tioptions3"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min->days"
+            android:textSize="25dp"
+            android:layout_marginStart="25dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/htd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hrs->days"
+            android:textSize="25dp"
+            android:layout_marginStart="23dp"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
